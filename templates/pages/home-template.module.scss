@@ -1,0 +1,7 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	@include grid(column, center, center);
+	width: 100%;
+	height: 100vh;
+}

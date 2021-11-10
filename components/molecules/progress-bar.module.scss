@@ -1,0 +1,42 @@
+@import "@styles/main.scss";
+
+.progress {
+	@include grid(column, flex-start, center);
+
+	position: relative;
+	width: 80%;
+	height: 10vh;
+
+	.progress_index {
+		position: absolute;
+		bottom: 36px;
+		right: 10%;
+
+		font-size: 1.2rem;
+	}
+
+	.progress_bar {
+		@include grid(row, flex-start, center);
+
+		position: absolute;
+		bottom: 0;
+		right: 10%;
+
+		width: 80%;
+		height: 24px;
+
+		border-radius: 10px;
+		overflow: hidden;
+
+		background-color: $progress-bar-background;
+
+		.progress_block {
+			width: 8.15%;
+			height: 100%;
+
+			margin-right: 1px;
+
+			background-color: $progress-bar-block;
+		}
+	}
+}

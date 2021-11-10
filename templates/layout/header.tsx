@@ -3,26 +3,17 @@ import styles from "./header.module.scss";
 import classnames from "classnames";
 import TextButton from "@comp/atoms/button/text-button";
 
-export interface HeaderProps {
-	menuVisible: boolean;
-	setMenuVisible: (value: boolean) => void;
-}
-
-export default function Header({ menuVisible, setMenuVisible }: HeaderProps) {
+export default function Header() {
 	return (
 		<header className={classnames(styles.wrapper)}>
 			<div className={classnames(styles.logo_button_wrapper)}>
-				<div onClick={() => setMenuVisible(!menuVisible)}></div>
 				<a href="/">
-					<TextButton size="large" content="Home" />
+					<TextButton size="large" content="홈" />
 				</a>
 			</div>
 			<div className={classnames(styles.nav_button_wrapper)}>
-				<a href="/post">
-					<TextButton size="large" content="포스트" />
-				</a>
-				<a href="/archive">
-					<TextButton size="large" content="저장소" />
+				<a href="/list">
+					<TextButton size="large" content="테스트 목록" />
 				</a>
 			</div>
 		</header>

@@ -5,7 +5,7 @@
 	position: relative;
 	width: 100vw;
 	height: auto;
-	min-height: calc(100vh + #{$footer-height});
+	min-height: 100vh;
 
 	.contents_wrapper {
 		@include grid(column, flex-start, flex-start);

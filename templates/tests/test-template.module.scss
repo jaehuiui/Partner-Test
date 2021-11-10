@@ -1,0 +1,42 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+
+	padding: 5vh 25%;
+
+	background-color: $background;
+
+	.header {
+		@include grid(column, space-between, center);
+		width: 100%;
+		height: 20vh;
+
+		padding: 16px 0;
+
+		.logo {
+			width: 48px;
+			height: 48px;
+		}
+	}
+
+	.body {
+		width: 100%;
+		height: 40vh;
+
+		padding: 60px 0 48px;
+
+		.title {
+			color: $black-100;
+		}
+	}
+
+	.answer {
+		@include grid(column, space-between, center);
+		width: 100%;
+		height: 30vh;
+
+		padding: 2vh 10% 8vh;
+	}
+}
