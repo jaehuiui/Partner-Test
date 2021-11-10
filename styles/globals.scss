@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "GowunBatang-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SangSangAnt";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+	// Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+	font-family: "SangSangAnt";
+	font-size: 20px;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	h1 {
+		font-family: "GowunBatang-Regular";
+		font-size: 1.8rem;
+
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	h5 {
+		font-family: "GowunBatang-Regular";
+		font-size: 0.75rem;
+
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	h2,
+	span {
+		font-family: "GowunBatang-Regular";
+	}
+}

@@ -1,0 +1,15 @@
+@import "@styles/main.scss";
+
+.container {
+	@include grid(column, flex-start, flex-start);
+	position: relative;
+	width: 100vw;
+	height: auto;
+	min-height: calc(100vh + #{$footer-height});
+
+	.contents_wrapper {
+		@include grid(column, flex-start, flex-start);
+		width: 100%;
+		height: auto;
+	}
+}

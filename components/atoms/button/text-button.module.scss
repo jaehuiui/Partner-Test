@@ -1,0 +1,20 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	width: auto;
+
+	&.small {
+		font-size: 0.75rem;
+		padding: 2px 8px;
+	}
+
+	&.medium {
+		font-size: 1rem;
+		padding: 4px 10px;
+	}
+
+	&.large {
+		font-size: 1.5rem;
+		padding: 6px 12px;
+	}
+}

@@ -1,0 +1,22 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	@include grid(row, space-between, center);
+	position: relative;
+	width: 100vw;
+	height: $header-height;
+
+	padding: 8px 16px;
+
+	background-color: $header-theme-1;
+
+	.logo_button_wrapper {
+		@include grid(row, flex-start, center);
+		height: 100%;
+	}
+
+	.nav_button_wrapper {
+		@include grid(row, flex-end, center);
+		height: 100%;
+	}
+}
